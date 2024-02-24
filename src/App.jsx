@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./assets/pages/Home";
-import About from "./assets/pages/About";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Error from "./pages/Error";
@@ -18,12 +18,22 @@ import {
 
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [load, updateLoad] = useState(true);
 
   return (
     <>
-      <Nav />
-      <Header />
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <Nav />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Navigate to="/"/>} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 }
