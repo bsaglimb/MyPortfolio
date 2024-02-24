@@ -12,8 +12,35 @@ import Contact from './pages/Contact.jsx'
 import Error from './pages/Error.jsx'
 import './index.css'
 
+// Define the accessible routes, and which components respond to which URL
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      },
+      {
+        path: "/About",
+        element: <About />
+      },
+      {
+        path: "/Projects",
+        element: <Projects />
+      },
+      {
+        path: "/Contact",
+        element: <Contact />
+      },
+    ],
+  },
+]);
 
 
+// Initialize the react router
 ReactDOM.createRoot(document.getElementById('root')).render(
 <RouterProvider router={router} />
 );
