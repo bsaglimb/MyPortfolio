@@ -4,37 +4,46 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Particle from "../components/Particle";
 
+
 export default function Projects() {
   return (
     <Container fluid className="project-section">
       <Particle />
       <h1 className="project-heading">
-        My Recent <strong className="color">Works </strong>
+        My Recent <strong className="color">Projects </strong>
       </h1>
       <p style={{ color: "black" }}>
         Here are a few projects I've worked on recently.
       </p>
 
       <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-          
-            
-              title="Brewery Finder"
-              description=""
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink=""
-           
-          </Col>
+        <Col md={4} className="project-card">
+          <Card className="project-card-view">
+            {/* <Card.Img variant="top" src={props.imgPath} alt="card-img" /> */}
+            <Card.Body>
+              <Card.Title>Brewery Finder</Card.Title>
+              <Card.Text>
+                Description goes here...
+              </Card.Text>
+              <Button variant="primary" href="https://github.com/bsaglimb/BreweryFinder">GitHub Link</Button>{' '}
+              <Button variant="secondary" href="">Demo Link</Button>{' '}
+            </Card.Body>
+          </Card>
+        </Col>
 
-          <Col md={4} className="project-card">
-            
-              title="Roomeo"
-              description=""
-              ghLink=""
-              demoLink=""
-      
-          </Col>
-          </Row>
+        <Col md={4} className="project-card">
+          <Card className="project-card-view">
+            <Card.Body>
+              <Card.Title>Roomeo</Card.Title>
+              <Card.Text>
+                Description goes here...
+              </Card.Text>
+              <Button variant="primary" href="https://github.com/TroyMena/roomeo">GitHub Link</Button>{' '}
+              <Button variant="secondary" href="https://roomeo-54bd0cc57e2b.herokuapp.com/">Demo Link</Button>{' '}
+            </Card.Body>
+          </Card>
+        </Col>
+      </Row>
     </Container>
   );
 }
