@@ -213,3 +213,16 @@
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
   }
+
+  .tech-icons:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    border: 2.2px solid rgba(115, 151, 230, 0.883) !important;
+  }
+
+
+  @media (max-width: 767px) {
+    .tech-icons {
+      margin: 10px !important;
+    }
+  }

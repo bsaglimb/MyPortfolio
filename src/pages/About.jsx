@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { IoFlowerOutline } from "react-icons/io5";
 import Particle from "../components/Particles";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
@@ -10,7 +9,15 @@ import {
   DiMongodb,
   DiGit,
 } from "react-icons/di";
-import { TbBrandGolang } from "react-icons/tb";
+import {
+  SiVisualstudiocode,
+  SiSlack,
+  SiMacos,
+  SiMysql, 
+  SiInsomnia
+} from "react-icons/si";
+import { PiFileCss } from "react-icons/pi";
+
 
 
 
@@ -71,7 +78,34 @@ export default function About() {
         </Col>
         <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+        <DiGit />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+        <SiMysql />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+        <PiFileCss />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+        <SiInsomnia />
+        </Col>
+
+      <h1 className="project-heading">
+          <strong>Tools I Use</strong>
+        </h1>
+        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiMacos />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVisualstudiocode />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSlack />
+      </Col>
+      </Row>
 
       </Row>
       </Container>
