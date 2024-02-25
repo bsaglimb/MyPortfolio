@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { IoFlowerOutline } from "react-icons/io5";
-import Particle from "../components/Particles";
+import Particle from "../components/Particle";
 import {
   DiJavascript1,
   DiReact,
