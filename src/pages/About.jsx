@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { IoFlowerOutline } from "react-icons/io5";
 import Particle from "../components/Particles";
+
+
 
 
 export default function About() {
@@ -30,6 +33,18 @@ export default function About() {
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
+          <ul>
+            <li className="about-activity">
+              <IoFlowerOutline /> Fostering Kittens
+            </li>
+            <li className="about-activity">
+              <IoFlowerOutline /> Playing Video Games
+            </li>
+            <li className="about-activity">
+            <IoFlowerOutline /> Travelling
+            </li>
+          </ul>
+
         </blockquote>
 
       </Col>
