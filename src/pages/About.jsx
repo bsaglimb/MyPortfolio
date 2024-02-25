@@ -2,6 +2,15 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { IoFlowerOutline } from "react-icons/io5";
 import Particle from "../components/Particles";
+import { CgCPlusPlus } from "react-icons/cg";
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  DiMongodb,
+  DiGit,
+} from "react-icons/di";
+import { TbBrandGolang } from "react-icons/tb";
 
 
 
@@ -48,8 +57,22 @@ export default function About() {
     <h1 className="project-heading">
         <strong>Professional Skillset </strong>
         </h1>
-
       </Col>
+      </Row>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiJavascript1 />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+        <DiReact />
+      </Col>
+        <Col xs={4} md={2} className="tech-icons">
+        <DiNodejs />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+        <DiMongodb />
+      </Col>
+
       </Row>
       </Container>
       </Container>
