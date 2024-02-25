@@ -1,6 +1,5 @@
 
 
-
 /* --------- */
 /* Navbar Section  */
 /* --------- */
@@ -178,3 +177,7 @@
     color: #0c4386 !important;
   }
   
+
+.about-section {
+    background-color: #000;
+}
