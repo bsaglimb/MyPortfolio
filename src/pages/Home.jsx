@@ -1,17 +1,32 @@
 import React from "react";
+import ParticlesBg from "particles-bg";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-export default function Home2() {
-    return(
-        <Container fluid className="home-about-section" id="about">
+export default function Home() {
+    return (
+      <section>
+        <Container fluid className="home-section" id="home">
+        <ParticlesBg type="lines" bg={true} />
+          <Container className="home-content">
+            <Row>
+              <Col md={7} className="home-header">
+                <h1 style={{ paddingBottom: 15 }} className="heading">Hello, welcome to my portfolio!</h1>
+                <h1 className="heading-name">I'm
+                  <strong className="main-name"> Brianna Saglimbeni</strong>
+                </h1>
+              </Col>
+            </Row>
+            <Container fluid className="home-about-section" id="about">
         <Container>
             <Row>
                 <Col md={8} className="home-about-description">
                     <h1 style={{ fontSize: "2.6em" }}>
+                      <br />
+                      <br />
                     LET ME <span className="color"> INTRODUCE </span> MYSELF</h1>
                     <p className="home-about-body">
                         I am a former neuroscientist turned full-stack software developer. 
@@ -65,5 +80,8 @@ export default function Home2() {
             </Row>
         </Container>
         </Container>
+          </Container>
+        </Container>
+      </section>
     );
-}
+  }

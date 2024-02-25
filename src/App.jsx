@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./pages/Home/Home";
-import Home2 from "./pages/Home/Home2";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -26,7 +25,7 @@ function App() {
         <Nav />
         <Header />
         <Routes>
-          <Route path="/" element={<><Home /><Home2 /></>} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
