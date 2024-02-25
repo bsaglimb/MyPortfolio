@@ -61,7 +61,8 @@ export default function Contact() {
       <div className="contact-info">
         {/* Contact information */}
         <div>
-          <h3>Hello {userName}</h3>
+        <br />
+          <h2>Hello {userName}</h2>
           <p>Want to get into contact?</p>
           <address>
             Fort Lauderdale, Fl <br />
@@ -80,11 +81,49 @@ export default function Contact() {
     </Col>
 
     <Col md={6}>
-      {/* Contact form section */}
-      <div className="contact-form">
-        <h3>Contact Me</h3>
-        <form className="form">
-          {/* Form inputs */}
+            {/* contact form section  */}
+        <div className="contact-form">
+        <br />
+          <h2>Contact Me</h2>
+          <form className="form">
+            {/* Name */}
+            <label for="contact-name">Your Name</label>
+            <input
+              value={userName}
+              name="userName"
+              onChange={handleInputChange}
+              type="text"
+              id="contact-name"
+              placeholder="Your Name"
+            />
+
+            {/* Email */}
+            <label for="contact-email">Your Email</label>
+            <input
+              value={email}
+              name="email"
+              onChange={handleInputChange}
+              type="email"
+              id="contact-email"
+              placeholder="Your Email"
+            />
+
+            {/* Message */}
+            <label for="contact-message">Message</label>
+            <textarea
+              value={message}
+              name="message"
+              onChange={handleInputChange}
+              type="message"
+              id="contact-message"
+              placeholder="Your Message"
+            />
+            <button type="button" onClick={handleFormSubmit}>
+              Submit
+            </button>
+            <br />
+            <br />
+            <br />
         </form>
       </div>
     </Col>
@@ -95,6 +134,7 @@ export default function Contact() {
     <div>
       <p className="error-text">{errorMessage}</p>
     </div>
+
   )}
 </Container>
   );
