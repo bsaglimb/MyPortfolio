@@ -107,7 +107,6 @@ export default function Contact() {
               id="contact-email"
               placeholder="Your Email"
             />
-
             {/* Message */}
             <label for="contact-message">Message</label>
             <textarea
