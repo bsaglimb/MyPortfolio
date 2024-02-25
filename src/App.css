@@ -193,3 +193,7 @@
     text-align: left !important;
     padding-left: 1px !important;
   }
+
+.project-heading {
+    margin-top: 100px;
+}

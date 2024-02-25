@@ -16,12 +16,12 @@ export default function About() {
             md={7}
             style={{
               justifyContent: "center",
-              paddingTop: "30px",
+              paddingTop: "150px",
               paddingBottom: "50px",
             }}
           >
         <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              About ME
+              <strong>About ME</strong>
             </h1>
             <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
@@ -44,8 +44,10 @@ export default function About() {
             <IoFlowerOutline /> Travelling
             </li>
           </ul>
-
-        </blockquote>
+    </blockquote>
+    <h1 className="project-heading">
+        <strong>Professional Skillset </strong>
+        </h1>
 
       </Col>
       </Row>
