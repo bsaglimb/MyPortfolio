@@ -184,10 +184,6 @@
 /* About section */
 /* --------- */
 
-#tsparticles{
-    color: #ffffff;
-}
-
 .about-section {
     background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
 }
@@ -230,12 +226,59 @@
       margin: 10px !important;
     }
   }
+
+
+
 /* --------- */
-/* About section */
+/* Projects */
 /* --------- */
 
 
+.project-section {
+    position: relative !important;
+    padding-top: 10px !important;
+    padding-bottom: 90px !important;
+    background-image: linear-gradient(to right bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  }
+  
+  .project-card {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    height: auto !important;
+  }
 
+  .project-card-view {
+    box-shadow: 0 4px 5px 3px rgba(128, 53, 136, 0.459) !important;
+    background-color: transparent !important;
+    opacity: 0.9 !important;
+    transition: all 0.5s ease 0s !important;
+    height: 100% !important;
+  }
+
+  .project-card-view:hover {
+    transform: scale(1.02) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px rgba(25, 61, 151, 0.561) !important;
+  }
+
+  .btn-primary {
+    color: #fff !important;
+    background-color: #206dc5d7 !important;
+    border-color: #2078c5d7 !important;
+  }
+  
+  .btn-primary:hover {
+    color: #fff !important;
+    background-color: #863676 !important;
+    border-color: #4a1947 !important;
+  }
+
+  .btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
 
 
 

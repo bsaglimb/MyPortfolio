@@ -10,9 +10,9 @@ export default function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <h1 className="project-heading">
-        My Recent <strong className="color">Projects </strong>
+       <strong> My Recent Projects </strong>
       </h1>
-      <p style={{ color: "black" }}>
+      <p style={{ color: "black", textAlign: "center" }}>
         Here are a few projects I've worked on recently.
       </p>
 
