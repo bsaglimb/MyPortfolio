@@ -1,9 +1,44 @@
+import React, { useState } from "react";
 import { Link, useLocation } from 'react-router-dom';
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
 
 function Nav(){
     const currentPage = useLocation().pathname;
+    const [expand, updateExpanded] = useState(false);
+    const [navColor, updateNavbar] = useState(false);
+
+    function scrollHandler() {
+        if (window.scrollY >= 20) {
+          updateNavbar(true);
+        } else {
+          updateNavbar(false);
+        }
+      }
+    
+      window.addEventListener("scroll", scrollHandler);
 
     return(
+        <Navbar
+        expanded={expand}
+        fixed="top"
+        expand="md"
+        className={navColor ? "fixed" : "navbar"}
+      >
+        <Container>
+        <Navbar.Brand href="/" className="d-flex">
+          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => {
+            updateExpanded(expand ? false : "expanded");
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </Navbar.Toggle>
         <ul className="nav nav-bar">
             <li className="nav-item">
                 <Link
@@ -31,6 +66,8 @@ function Nav(){
                   className={currentPage === "/Contact" ? "nav-link active" : "nav-link"}>Contact</Link>
             </li>
         </ul>
+      </Container>     
+    </Navbar>
 
     );
 }

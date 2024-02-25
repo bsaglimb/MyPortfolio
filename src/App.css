@@ -1,4 +1,5 @@
 
+
 /* --------- */
 /* Home section */
 /* --------- */
@@ -44,7 +45,7 @@
   }
   
   .home-about-description {
-    color: white !important;
+    color: rgb(13, 5, 5) !important;
     padding-top: 100px !important;
     padding-bottom: 20px !important;
     text-align: center;
@@ -59,7 +60,7 @@
   .home-about-social {
     text-align: center !important;
     padding-top: 25px;
-    color: white !important;
+    color: rgba(28, 103, 194, 0.814) !important;
   }
   
   .home-about-social-links {

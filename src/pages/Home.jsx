@@ -31,7 +31,7 @@ export default function Home() {
                     <p className="home-about-body">
                         I am a former neuroscientist turned full-stack software developer. 
                         <br />
-                        <br /> I am versed in a variety of programming languages and technologies, including
+                        <br /> I am versed in a variety of programming languages and technologies, including&nbsp;
                         <i>
                             <b className="color">JavaScript, HTML & CSS. </b>
                         </i>
