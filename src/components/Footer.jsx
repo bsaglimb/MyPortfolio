@@ -15,6 +15,32 @@ export default function Footer() {
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} BS</h3>
         </Col>
+        <Col md="4" className="footer-body">
+          <ul className="footer-icons">
+            <li className="social-icons">
+              <a
+                href="https://github.com/bsaglimb"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiFillGithub />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.linkedin.com/in/brianna-s-37ab3b14a/"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
+            </li>
+            </ul>
+          
+            </Col>
+
         </Row>
         </Container>
     );
