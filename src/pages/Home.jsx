@@ -27,6 +27,9 @@ export default function Home() {
                     <h1 style={{ fontSize: "2.6em" }}>
                       <br />
                       <br />
+                      <br />
+                      <br />
+                      <br />
                     LET ME <span className="color"> INTRODUCE </span> MYSELF</h1>
                     <p className="home-about-body">
                         I am a former neuroscientist turned full-stack software developer. 
