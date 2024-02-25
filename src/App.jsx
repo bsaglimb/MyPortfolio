@@ -6,7 +6,6 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Nav from "./components/Nav";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
@@ -23,7 +22,6 @@ function App() {
     <>
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Nav />
-        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
