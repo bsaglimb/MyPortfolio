@@ -3,6 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Particle from "../components/Particle";
+import { CgWebsite } from "react-icons/cg";
+import { BsGithub } from "react-icons/bs";
 
 
 export default function Projects() {
@@ -25,8 +27,9 @@ export default function Projects() {
               <Card.Text>
                 Description goes here...
               </Card.Text>
-              <Button variant="primary" href="https://github.com/bsaglimb/BreweryFinder">GitHub Link</Button>{' '}
-              <Button variant="secondary" href="">Demo Link</Button>{' '}
+             
+              <Button variant="primary" href="https://github.com/bsaglimb/BreweryFinder"><BsGithub /> &nbsp;GitHub</Button>{' '}
+              <Button variant="secondary" href=""><CgWebsite /> &nbsp;Demo</Button>{' '}
             </Card.Body>
           </Card>
         </Col>
@@ -38,8 +41,8 @@ export default function Projects() {
               <Card.Text>
                 Description goes here...
               </Card.Text>
-              <Button variant="primary" href="https://github.com/TroyMena/roomeo">GitHub Link</Button>{' '}
-              <Button variant="secondary" href="https://roomeo-54bd0cc57e2b.herokuapp.com/">Demo Link</Button>{' '}
+              <Button variant="primary" href="https://github.com/TroyMena/roomeo"><BsGithub /> &nbsp;GitHub </Button>{' '}
+              <Button variant="secondary" href="https://roomeo-54bd0cc57e2b.herokuapp.com/"><CgWebsite /> &nbsp;Demo </Button>{' '}
             </Card.Body>
           </Card>
         </Col>
