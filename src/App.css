@@ -255,6 +255,7 @@
 }
 
 .project-heading{
+    
     margin-bottom: 100px;
     color: rgb(230, 221, 221);
 }
@@ -292,6 +293,7 @@
     color: #fff !important;
     background-color: #206dc5d7 !important;
     border-color: #2078c5d7 !important;
+    margin-left: 50px;
   }
   
   .btn-primary:hover {

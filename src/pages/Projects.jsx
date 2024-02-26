@@ -29,7 +29,7 @@ export default function Projects() {
               className="project-card-img"
             ></Card.Img>
             <Card.Body>
-              <Card.Title>Brewery Finder</Card.Title>
+              <Card.Title style={{ textAlign: "center" }}>Brewery Finder</Card.Title>
               <Card.Text>
                 Brewery Finder seamlessly combines the thrill of discovering new
                 breweries with the convenience of real-time weather updates,
@@ -41,12 +41,12 @@ export default function Projects() {
                 at each location.{" "}
               </Card.Text>
               <Button
-                variant="primary"
+                className="btn-primary"
                 href="https://github.com/bsaglimb/BreweryFinder"
               >
                 <BsGithub /> &nbsp;GitHub
               </Button>{" "}
-              <Button variant="secondary" href="">
+              <Button className="btn-primary" href="">
                 <CgWebsite /> &nbsp;Demo
               </Button>{" "}
             </Card.Body>
@@ -62,24 +62,26 @@ export default function Projects() {
               className="project-card-img"
             ></Card.Img>
             <Card.Body>
-              <Card.Title>Roomeo</Card.Title>
+              <Card.Title style={{ textAlign: "center" }}>Roomeo</Card.Title>
               <Card.Text>
                 Roomeo is an innovative roommate finder platform designed to
                 revolutionize the way people connect and live together. Our
                 motivation was aimed at simplifying the often challenging
                 process of finding a compatible roommate. Roomeo leverages
-                advanced algorithms and personalized matching to create
+                advanced algorithms to create
                 harmonious living arrangements. Roomeo is not just a roommate
                 finder but a community-driven platform committed to transforming
                 the roommate search experience.{" "}
               </Card.Text>
-              <Button
+              <Button 
+                className="btn-primary"
                 variant="primary"
                 href="https://github.com/TroyMena/roomeo"
               >
                 <BsGithub /> &nbsp;GitHub{" "}
               </Button>{" "}
               <Button
+                className="btn-primary"
                 variant="secondary"
                 href="https://roomeo-54bd0cc57e2b.herokuapp.com/"
               >
