@@ -7,12 +7,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+
 
 
 function App() {

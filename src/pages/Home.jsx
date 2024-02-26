@@ -23,7 +23,7 @@ export default function Home() {
                 </h1>
               </Col>
             </Row>
-            <Container fluid className="home-about-section" id="about">
+            <Container fluid className="home-about-section">
         <Container>
             <Row>
                 <Col md={8} className="home-about-description">

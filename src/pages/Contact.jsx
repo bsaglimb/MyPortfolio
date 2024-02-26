@@ -47,7 +47,7 @@ export default function Contact() {
   };
 
   return (
-    <Container fluid className="contact">
+    <Container fluid className="contact" id="contact">
   <div className="flex-row">
     <br />
     <br />

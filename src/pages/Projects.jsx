@@ -9,7 +9,7 @@ import { BsGithub } from "react-icons/bs";
 
 export default function Projects() {
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="project-section" id="projects">
       <h1 className="project-heading">
        <strong> My Recent Projects </strong>
       </h1>

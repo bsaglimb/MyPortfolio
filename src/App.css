@@ -314,11 +314,12 @@
   .contact-title{
     font-size: 50px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(232, 219, 219);
     padding-bottom: 20px;
   }
 
   .contact-info {
+    color: rgb(232, 219, 219);
     padding-left: 100px;
     display: flex;
     justify-content: space-between;
@@ -326,6 +327,7 @@
   }
   
   .contact-form {
+    color: rgb(232, 219, 219);
     padding-right: 20%;
     padding-left: 20px;
     padding-top: 30px;
