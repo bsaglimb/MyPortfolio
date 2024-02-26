@@ -78,6 +78,9 @@
 /* Home section */
 /* --------- */
 
+.type-writer {
+    color: #863676;
+}
 
 .home-header {
     padding-top: 80px !important;
