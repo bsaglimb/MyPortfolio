@@ -1,7 +1,7 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-function Particle() {
+export default function Particle() {
   return (
     <Particles
       id="tsparticles"
@@ -52,4 +52,4 @@ function Particle() {
   );
 }
 
-export default Particle;
+

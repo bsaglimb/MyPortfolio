@@ -5,12 +5,15 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Particle from "../components/Particle";
+
 
 export default function Home() {
+  const isFirstSection = true;
     return (
       <section>
-        <Container fluid className="home-section" id="home">
-        <ParticlesBg type="lines" bg={true} />
+        <Container className="home-section" id="home">
+        {isFirstSection && <ParticlesBg type="lines" bg={true} />}
           <Container className="home-content">
             <Row>
               <Col md={7} className="home-header">
@@ -25,11 +28,6 @@ export default function Home() {
             <Row>
                 <Col md={8} className="home-about-description">
                     <h1 style={{ fontSize: "2.6em" }}>
-                      <br />
-                      <br />
-                      <br />
-                      <br />
-                      <br />
                     LET ME <span className="color"> INTRODUCE </span> MYSELF</h1>
                     <p className="home-about-body">
                         I am a former neuroscientist turned full-stack software developer. 

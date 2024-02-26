@@ -41,7 +41,7 @@ export default function About() {
             </h1>
             <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="aboutColor">Brianna Saglimbeni </span>
+            Hi Everyone, I am <span className="color">Brianna Saglimbeni </span>
             from New York.
             <br />
             I am a former neuroscientist who has transitioned into the realm of full-stack software development. My journey has been one of seamless integration, blending my deep understanding of the human brain with the intricacies of coding. Driven by an insatiable passion for learning, I thrive in the fast-paced world of technology, constantly seeking out new challenges and opportunities for growth. From unraveling the mysteries of neural networks to crafting elegant solutions in software development, I embody the spirit of versatility and innovation. I am excited to continue making an impact, leveraging my diverse background to contribute meaningfully to both scientific exploration and technological advancement.

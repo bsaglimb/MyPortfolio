@@ -20,17 +20,23 @@ function App() {
 
   return (
     <>
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Nav />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Navigate to="/"/>} />
-        </Routes>
-        <Footer />
-      </div>
+    <div id="top">
+      <Nav />
+      <section id="#home">
+        <Home />
+      </section>
+      <main>
+        <About />
+        <section id="#projects">
+          <Projects />
+        </section>
+        <section id="#contact">
+          <Contact />
+        </section>
+      </main>
+      <Footer />
+      {/* <ScrollToTop /> */}
+    </div>
     </>
   );
 }
