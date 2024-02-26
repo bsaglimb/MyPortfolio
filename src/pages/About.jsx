@@ -37,7 +37,7 @@ export default function About() {
             }}
           >
         <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              <strong>About ME</strong>
+              <strong>Let me introduce myself.</strong>
             </h1>
             <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>

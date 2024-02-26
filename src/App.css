@@ -35,6 +35,12 @@
     font-size: 1.2rem !important;
     
   }
+  .social-icons-nav{
+    margin-top: 10px;
+    margin: 10px;
+    padding-left: 5px;
+    color: #5aaad5!important;
+  }
 
   .nav-link {
     padding: 0.8rem 1rem !important;
@@ -115,14 +121,6 @@
     position: relative;
     padding-bottom: 70px !important;
     padding-top: 70px !important;
-  }
-  
-  .home-about-description {
-    color: whitesmoke !important;
-    margin-top: 250px !important;
-    padding-top: 200px !important;
-    padding-bottom: 20px !important;
-    text-align: center;
   }
   
   .home-about-body {
@@ -250,6 +248,11 @@
 /* Projects */
 /* --------- */
 
+.project-card-img{
+    object-fit: cover;
+    height: 200px;
+    padding: 15px;
+}
 
 .project-heading{
     margin-bottom: 100px;

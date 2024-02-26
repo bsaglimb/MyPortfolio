@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Nav() {
   const currentPage = useLocation().pathname;
@@ -32,9 +34,7 @@ function Nav() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+
         </Navbar.Toggle>
         <ul className="nav nav-bar">
           <li className="nav-item">
@@ -90,6 +90,28 @@ function Nav() {
             >
               Contact
             </Link>
+          </li>
+
+          {/* Not sure if i want these in the nav bar */}
+            <li className="social-icons-nav">
+                      <a
+                        href="https://github.com/bsaglimb"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="icon-color  home-social-icons"
+                      >
+                        <AiFillGithub />
+                      </a>
+                    </li>
+                    <li className="social-icons-nav">
+                      <a
+                        href="https://www.linkedin.com/in/brianna-s-37ab3b14a/"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="icon-color  home-social-icons"
+                      >
+                        <FaLinkedinIn />
+                      </a>
           </li>
         </ul>
       </Container>
