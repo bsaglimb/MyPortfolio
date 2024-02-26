@@ -11,7 +11,6 @@
 
 
 
-
 /* --------- */
 /* Navbar Section  */
 /* --------- */
@@ -51,6 +50,16 @@
     .nav-link {
       padding: 0.7rem 1rem !important;
     }
+    /* .Typewriter{
+        font-size: 1.4em !important;
+        font-weight: 500 !important;
+        position: absolute !important;
+      }
+      /* .personal-pic {
+        padding-top: 2em !important;
+        padding-bottom: 2em !important;
+      } */ 
+
   }
 
   /* Target the normal link */
@@ -198,9 +207,15 @@
 /* About section */
 /* --------- */
 
+
 .about-section{
     color: rgb(236, 229, 229) !important;
 }
+
+.about-section .row {
+    display: flex;
+    justify-content: space-between;
+  }
 
 .about-activity {
     list-style: none !important;
@@ -209,10 +224,20 @@
     color: whitesmoke !important;
   }
 
-.project-heading {
+  .skillset-heading{
     margin-top: 100px;
     text-align: center;
-}
+    color: whitesmoke;
+  }
+
+  .personal-pic{
+    border-radius: 50%;
+    height: 400px;
+    width: 430px;
+    margin-top: 170px;
+    padding: 20px;
+  }
+
 
 .tech-icons {
     font-size: 4.5em !important;
@@ -240,6 +265,11 @@
     .tech-icons {
       margin: 10px !important;
     }
+    .personal-pic {
+        margin-top: 50px;
+        height: 300px;
+        width: 320px;
+      }
   }
 
 

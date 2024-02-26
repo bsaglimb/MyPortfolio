@@ -8,6 +8,9 @@ import Particle from "../components/Particle";
 
 export default function Home() {
   const isFirstSection = true;
+  const girlCoding = "../images/girl-coder.png"
+  const test = "../images/coder.png"
+
   return (
     <section>
       <Container className="home-section" id="home">
@@ -15,24 +18,32 @@ export default function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15}} className="heading">
-              Hello, welcome to my portfolio!
+              <h1 style={{ paddingBottom: 15 }} className="heading">
+                Hello, welcome to my portfolio!
               </h1>
               <h1 className="heading-name">
                 I'm
                 <strong className="main-name"> Brianna Saglimbeni</strong>
               </h1>
               <br />
-              <h2 md={7} style={{paddingLeft: 42}}>
-              <Typewriter 
-                options={{
-                  strings: ["Full Stack Software Developer"],
-                  autoStart: true,
-                  loop: true,
-                  deleteSpeed: 50,
-                }}
-              />
+              <h2 md={7} style={{ paddingLeft: 42 }}>
+                <Typewriter
+                  options={{
+                    strings: ["Full Stack Software Developer"],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 50,
+                  }}
+                />
               </h2>
+            </Col>
+            <Col md={5} style={{ paddingBottom: 20 }}>
+              <img
+                src={test}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "500px" }}
+              />
             </Col>
           </Row>
           <Container fluid className="home-about-section">

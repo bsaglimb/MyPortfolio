@@ -12,7 +12,7 @@ export default function Projects() {
 
   return (
     <Container fluid className="project-section" id="projects">
-      <h1 className="project-heading">
+      <h1 className="skillset-heading">
         <strong> My Recent Projects </strong>
       </h1>
       <p style={{ color: "black", textAlign: "center" }}>
