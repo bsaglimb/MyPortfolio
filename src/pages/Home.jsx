@@ -45,11 +45,7 @@ export default function Home() {
                 style={{ maxHeight: "500px" }}
               />
             </Col>
-          </Row>
-          <Container fluid className="home-about-section">
-            <Container>
-              <Row>
-                <Col md={12} className="home-about-social">
+            <Col md={12} className="home-about-social">
                   <ul className="home-about-social-links">
                     <li className="social-icons">
                       <a
@@ -73,9 +69,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </Col>
-              </Row>
-            </Container>
-          </Container>
+          </Row>
         </Container>
       </Container>
     </section>
