@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -11,7 +12,15 @@ import Footer from "./components/Footer";
 
 
 function App() {
-  const [load, updateLoad] = useState(true);
+  // const [load, updateLoad] = useState(true);
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     upadateLoad(false);
+  //   }, 1200);
+
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <>
@@ -24,6 +33,9 @@ function App() {
         <About />
         <section id="#projects">
           <Projects />
+        </section>
+        <section id="#resume">
+          <Resume />
         </section>
         <section id="#contact">
           <Contact />

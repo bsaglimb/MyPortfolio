@@ -4,9 +4,9 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Resume from "../pages/Resume";
 
 function Nav() {
-  const currentPage = useLocation().pathname;
   const [expand, updateExpanded] = useState(false);
   const [navColor, updateNavbar] = useState(false);
 
@@ -76,6 +76,19 @@ function Nav() {
               }
             >
               Projects
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/Resume"
+              className="nav-link"
+              onClick={() =>
+                document
+                  .getElementById("resume")
+                  .scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Resume
             </Link>
           </li>
           <li className="nav-item">
