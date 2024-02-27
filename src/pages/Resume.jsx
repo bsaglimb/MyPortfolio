@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import pdf from "../assets/Resume.pdf";
-import { pdfjs } from 'react-pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import pdf from "../assets/resume.pdf";
+
 
 
 function Resume() {
@@ -19,21 +16,15 @@ function Resume() {
         return (
             <Container fluid id="resume" className="resume-section">
                 <Row style={{ justifyContent: "center", position: "relative" }}>
-                    <Button
-                        variant="primary"
-                        href={pdf}
-                        target="_blank"
+                    <button
+                        className='btn btn-outline-primary'
                         style={{ maxWidth: "250px" }}
                     >
+                        <a href={pdf} download style={{ textDecoration: "none" }} target='_blank'>
                         <AiOutlineDownload />
                         &nbsp;Download Resume
-                    </Button>
-                </Row>
-    
-                <Row id="resume" className="resume" style={{ justifyContent: "center" }}>
-                    <Document file={pdf} className="d-flex justify-content-center">
-                        <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-                    </Document>
+                        </a>
+                    </button>
                 </Row>
             </Container>
     );

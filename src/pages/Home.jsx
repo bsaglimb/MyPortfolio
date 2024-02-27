@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Particle from "../components/Particle";
+import ParticlesExample from "../components/ParticlesExample";
 
 export default function Home() {
   const isFirstSection = true;
@@ -13,6 +14,7 @@ export default function Home() {
 
   return (
     <section>
+      
       <Container className="home-section" id="home">
         {isFirstSection && <ParticlesBg type="lines" bg={true} />}
         <Container className="home-content">
