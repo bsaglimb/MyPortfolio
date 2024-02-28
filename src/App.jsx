@@ -15,19 +15,10 @@ import Footer from "./components/Footer";
 function App() {
   const [load, updateLoad] = useState(true);
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     upadateLoad(false);
-  //   }, 1200);
-
-  //   return () => clearTimeout(timer);
-  // }, []);
-
   return (
     <>
-      <Nav />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Nav />
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
@@ -35,8 +26,8 @@ function App() {
           <Route path="/Resume" element={<Resume />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

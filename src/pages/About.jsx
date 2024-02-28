@@ -17,11 +17,13 @@ import {
   SiInsomnia,
 } from "react-icons/si";
 import { PiFileCss } from "react-icons/pi";
+// import Header from "../components/Header";
 
 export default function About() {
   const imgMe = "../images/me.JPG";
 
   return (
+   
     <Container fluid className="about-section" id="about">
       <Particle />
       <Container>
@@ -127,3 +129,4 @@ export default function About() {
     </Container>
   );
 }
+
