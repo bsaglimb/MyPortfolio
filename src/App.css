@@ -496,6 +496,57 @@
 /* Footer */
 /* --------- */
 
+/*Devices larger than 1024px*/
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 42px;
+  }
+}
+
+/*Devices between 768px and 1024px*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    text-align: center !important;
+  }
+
+  .about-section{
+    text-align: center !important;
+    margin-left: 150px;
+  }
+  
+  .personal-pic {
+
+    display: flex;
+    max-width: 400px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+  }
+
+  .skillset-heading{
+    margin-top: 10% !important;
+    max-width: 400px;
+    max-height: 300px;
+
+  }
+ 
+  .tech-icons {
+    width: auto;
+    height: auto;
+    margin: 10px !important;
+    text-align: center;
+  }
+
+  .tech-icons-container {
+
+    width: 400px;
+    height: auto;
+    text-align: center;
+  }
+
+}
+
+
 @media (max-width: 767px) {
 
 

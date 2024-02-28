@@ -25,7 +25,6 @@ export default function About() {
   const img3 = "../images/img4.jpg";
 
   return (
-   
     <Container fluid className="about-section" id="about">
       <Particle />
       <Container>
@@ -44,10 +43,10 @@ export default function About() {
               <p style={{ textAlign: "justify" }}>
                 I am a former neuroscientist who has transitioned into the realm
                 of full-stack software development. My journey has been one of
-                seamless integration, blending my deep understanding of the
-                human brain with the intricacies of coding. Driven by an
-                insatiable passion for learning, I thrive in the fast-paced
-                world of technology, constantly seeking out new challenges and
+                seamless integration, blending my deep understanding of the human
+                brain with the intricacies of coding. Driven by an insatiable
+                passion for learning, I thrive in the fast-paced world of
+                technology, constantly seeking out new challenges and
                 opportunities for growth. From unraveling the mysteries of
                 neural networks to crafting elegant solutions in software
                 development, I embody the spirit of versatility and innovation.
@@ -71,7 +70,7 @@ export default function About() {
               </ul>
             </blockquote>
           </Col>
-          <Col md={5} className="text-end">
+          <Col md={12} className="text-end">
             <img
               src={img3}
               alt="personal pic"
@@ -85,50 +84,53 @@ export default function About() {
             <strong>Professional Skillset</strong>
           </h1>
         </Row>
-        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Col xs={4} md={2} className="tech-icons">
-            <DiJavascript1 />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <DiReact />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <DiNodejs />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <DiMongodb />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <DiGit />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiMysql />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <PiFileCss />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiInsomnia />
-          </Col>
-        </Row>
-        <Row>
-          <h1 style={{ justifyContent: "center" }} className="skillset-heading">
-            <strong>Tools I Use</strong>
-          </h1>
-        </Row>
-        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiMacos />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiVisualstudiocode />
-          </Col>
-          <Col xs={4} md={2} className="tech-icons">
-            <SiSlack />
-          </Col>
-        </Row>
+        <div className="tech-icons-container">
+          <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+            <Col xs={4} md={2} className="tech-icons">
+              <DiJavascript1 />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+              <DiReact />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+              <DiNodejs />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+              <DiMongodb />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+              <DiGit />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+              <SiMysql />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+              <PiFileCss />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+              <SiInsomnia />
+            </Col>
+          </Row>
+        </div>
+        <div className="tech-icons-container">
+          <Row>
+            <h1 style={{ justifyContent: "center" }} className="skillset-heading">
+              <strong>Tools I Use</strong>
+            </h1>
+          </Row>
+          <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+            <Col xs={4} md={2} className="tech-icons">
+              <SiMacos />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+              <SiVisualstudiocode />
+            </Col>
+            <Col xs={4} md={2} className="tech-icons">
+              <SiSlack />
+            </Col>
+          </Row>
+        </div>
       </Container>
     </Container>
   );
-}
-
+          }  
