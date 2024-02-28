@@ -4,7 +4,7 @@
   line-height: 1.5;
 }
 
-.particles-bg {
+#particles-bg {
     z-index: 1;
     position: absolute;
   }
@@ -18,6 +18,10 @@
    --primary-color: rgb(33, 49, 42); 
    --secondary-color: #6b9080;
    --tertiary-color: #a4c3b2;
+  }
+
+  .particle{
+    color: var(--primary-color);
   }
 
 
