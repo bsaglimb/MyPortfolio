@@ -223,7 +223,7 @@
     border-radius: 20% !important;
     height: auto !important;
     width: auto !important;
-    margin-top: 100px !important;
+    margin-top: 40% !important;
     margin-left: 50px !important;
   }
 
@@ -263,14 +263,22 @@
 }
 
 .skillset-heading{
-    margin-bottom: 10px;
-    color: var(--primary-color);
-    font-size: 3.6em;
+    margin-bottom: 10px!important;
+    color: var(--primary-color)!important;
+    font-size: 3.6em!important;
+}
+
+.skillset-heading1{
+  color: var(--primary-color)!important;
+  font-size: 3em!important;
+  text-align: center!important;
+  margin-top: 5% !important;
+
 }
 
 .skillset-heading2{
-  color: var(--primary-color);
-  font-size: 2em;
+  color: var(--primary-color)!important;
+  font-size: 2em !important;
 }
 
 .project-section {
@@ -529,6 +537,11 @@
     max-height: 300px !important;
     margin-bottom: 50px !important;
 
+  }
+
+  .skillset-heading1{
+    margin-top: 10% !important;
+    font-size: 55px !important;
   }
  
   .tech-icons {

@@ -13,7 +13,7 @@ export default function Projects() {
   return (
     <Container fluid className="project-section" id="projects">
       <Particle />
-      <h1 className="skillset-heading">
+      <h1 className="skillset-heading1">
         <strong> My Recent Projects </strong>
       </h1>
       <p className="skillset-heading2" style={{textAlign: "center" }}>
