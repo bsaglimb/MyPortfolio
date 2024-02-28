@@ -62,7 +62,7 @@ export default function Contact() {
     <Col md={6}>
       <div className="contact-info">
         {/* Contact information */}
-        <div>
+        <div className="contact-content">
         <br />
           <h2>Hello {userName}</h2>
           <p>Want to get into contact?</p>

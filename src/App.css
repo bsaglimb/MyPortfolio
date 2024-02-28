@@ -41,7 +41,6 @@
 
   }
 
-
   
   .social-icons-nav{
     display: inline-block !important;
@@ -50,12 +49,6 @@
     padding-left: 15px;
   }
 
-  
-  @media (max-width: 767px) {
-    .nav-bar .nav-item .nav-link {
-      padding: 0.7rem 1rem !important;
-    }
-  }
   
 
   .nav-bar .nav-item .nav-link {
@@ -256,17 +249,6 @@
   }
 
 
-  @media (max-width: 767px) {
-    .tech-icons {
-      margin: 10px !important;
-    }
-    .personal-pic {
-        margin-top: 50px;
-        height: 300px;
-        width: 320px;
-      }
-  }
-
 
 
 /* --------- */
@@ -340,7 +322,7 @@
 
 
 
-  /* --------- */
+/* --------- */
 /* Resume */
 /* --------- */
 
@@ -479,7 +461,7 @@
 
 
 .footer {
-    background-color: var(--primary-color) !important;
+    background-color: var(--secondary-color) !important;
     bottom: 0 !important;
     padding-top: 10px !important;
     padding-bottom: 8px !important ;
@@ -507,7 +489,78 @@
     text-align: center !important;
   }
 
-  @media (max-width: 767px) {
+
+
+
+/* --------- */
+/* Footer */
+/* --------- */
+
+@media (max-width: 767px) {
+
+
+  .nav-bar .nav-item .nav-link {
+    padding: 0.7rem 1rem !important;
+  }
+
+  body{
+    text-align: center !important;
+  }
+  
+  .tech-icons {
+    margin: 10px !important;
+  }
+  .personal-pic {
+      margin-top: 50px;
+      height: 300px;
+      width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .resume-btn {
+      margin-top: 250px;
+    }
+ 
+    .contact-info p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%; 
+      
+    }
+
+    .contact-info h2 {
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%; 
+      
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%; /* Ensures the container takes up the full height */
+      max-width: 250px;
+    }
+    
+    .contact-content {
+      max-width: 400px; /* Adjust the maximum width of the content */
+    }
+
+    .contact-form {
+      padding-right: 5px;
+      padding-left: 5px;
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
     .footer-copywright {
       text-align: center !important;
     }
@@ -515,4 +568,4 @@
     .footer-body {
       text-align: center !important;
     }
-  }
+}
