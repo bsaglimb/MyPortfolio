@@ -15,7 +15,7 @@ export default function Projects() {
       <h1 className="skillset-heading">
         <strong> My Recent Projects </strong>
       </h1>
-      <p style={{ color: "black", textAlign: "center" }}>
+      <p className="skillset-heading2" style={{textAlign: "center" }}>
         Here are a few projects I've worked on recently.
       </p>
 
