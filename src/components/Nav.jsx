@@ -7,18 +7,19 @@ import { FaLinkedinIn } from "react-icons/fa";
 import Resume from "../pages/Resume";
 
 function Nav() {
+  const currentPage = useLocation().pathname;
   const [expand, updateExpanded] = useState(false);
   const [navColor, updateNavbar] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
+  // function scrollHandler() {
+  //   if (window.scrollY >= 20) {
+  //     updateNavbar(true);
+  //   } else {
+  //     updateNavbar(false);
+  //   }
+  // }
 
-  window.addEventListener("scroll", scrollHandler);
+  // window.addEventListener("scroll", scrollHandler);
 
   return (
     <Navbar
@@ -27,87 +28,59 @@ function Nav() {
       expand="md"
       className={navColor ? "fixed" : "navbar"}
     >
+
       <Container>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
+      <ul className="nav nav-bar">
+      <li className="nav-item">
+        <Link
+          to="/"
+          // This is a conditional (ternary) operator that checks to see if the current page is "Home"
+          // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
+          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
         >
+          Home
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/About"
+          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}
+        >
+          About
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Projects"
+          className={currentPage === '/Projects' ? 'nav-link active' : 'nav-link'}
+        >
+          Projects
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Resume"
+          className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Contact"
+          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+        >
+          Contact
+        </Link>
+      </li>
+    </ul>
 
-        </Navbar.Toggle>
-        <ul className="nav nav-bar">
-          <li className="nav-item">
-            <Link
-              to="/"
-              className="nav-link"
-              // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-              // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-              onClick={() =>
-                document
-                  .getElementById("home")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/About"
-              className="nav-link"
-              onClick={() =>
-                document
-                  .getElementById("about")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              About
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/Projects"
-              className="nav-link"
-              onClick={() =>
-                document
-                  .getElementById("projects")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Projects
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/Resume"
-              className="nav-link"
-              onClick={() =>
-                document
-                  .getElementById("resume")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Resume
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/Contact"
-              className="nav-link"
-              onClick={() =>
-                document
-                  .getElementById("contact")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-            >
-              Contact
-            </Link>
-          </li>
 
+    </Container>
           {/* Not sure if i want these in the nav bar */}
-            <li className="social-icons-nav">
-                      <a
+            <ul className="social-icons-nav">
+                      <a 
                         href="https://github.com/bsaglimb"
                         target="_blank"
                         rel="noreferrer"
@@ -115,8 +88,8 @@ function Nav() {
                       >
                         <AiFillGithub />
                       </a>
-                    </li>
-                    <li className="social-icons-nav">
+                    </ul>
+                    <ul className="social-icons-nav">
                       <a
                         href="https://www.linkedin.com/in/brianna-s-37ab3b14a/"
                         target="_blank"
@@ -125,9 +98,7 @@ function Nav() {
                       >
                         <FaLinkedinIn />
                       </a>
-          </li>
-        </ul>
-      </Container>
+          </ul>
     </Navbar>
   );
 }

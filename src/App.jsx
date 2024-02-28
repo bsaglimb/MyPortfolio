@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
@@ -12,7 +13,7 @@ import Footer from "./components/Footer";
 
 
 function App() {
-  // const [load, updateLoad] = useState(true);
+  const [load, updateLoad] = useState(true);
 
   // useEffect(() => {
   //   const timer = setTimeout(() => {
@@ -24,26 +25,18 @@ function App() {
 
   return (
     <>
-    <div id="top">
       <Nav />
-      <section id="#home">
-        <Home />
-      </section>
-      <main>
-        <About />
-        <section id="#projects">
-          <Projects />
-        </section>
-        <section id="#resume">
-          <Resume />
-        </section>
-        <section id="#contact">
-          <Contact />
-        </section>
-      </main>
-      <Footer />
-      {/* <ScrollToTop /> */}
-    </div>
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Resume" element={<Resume />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 }

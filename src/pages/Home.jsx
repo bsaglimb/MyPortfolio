@@ -4,8 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import Particle from "../components/Particle";
-import ParticlesExample from "../components/ParticlesExample";
+
 
 export default function Home() {
   const isFirstSection = true;
