@@ -509,39 +509,77 @@
     text-align: center !important;
   }
 
+  .social-icons-nav{
+    display: none !important;
+  }
+
   .about-section{
     text-align: center !important;
-    margin-left: 150px;
+    margin-left: 150px !important;
   }
   
   .personal-pic {
 
-    display: flex;
-    max-width: 400px;
-    max-height: 300px;
-    width: auto;
-    height: auto;
+    display: flex !important;
+    max-width: 400px !important;
+    max-height: 300px !important;
+    width: auto !important;
+    height: auto !important;
   }
 
   .skillset-heading{
     margin-top: 10% !important;
-    max-width: 400px;
-    max-height: 300px;
+    max-width: 400px !important;
+    max-height: 300px !important;
 
   }
  
   .tech-icons {
-    width: auto;
-    height: auto;
+    width: auto !important;
+    height: auto !important;
     margin: 10px !important;
-    text-align: center;
+    text-align: center !important;
   }
 
   .tech-icons-container {
 
-    width: 400px;
-    height: auto;
-    text-align: center;
+    width: 400px !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+
+  .contact-info h2 {
+    font-size: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    height: 100% !important;
+    
+  }
+
+  .contact-info {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    max-width: 200px !important;
+  }
+  
+ 
+
+  .contact-form {
+    font-size: 20px !important;
+    padding-right: 10px !important;
+    padding-left: 5px !important;
+    padding-top: 30px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .contact-form h2{
+    font-size: 40px !important;
+
   }
 
 }
