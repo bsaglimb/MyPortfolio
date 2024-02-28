@@ -548,6 +548,25 @@
     text-align: center !important;
   }
 
+  .skillset-heading{
+   margin-left: 180px !important;
+   margin-bottom: 50px !important;
+  }
+
+  .project-card{
+    padding: 20px !important;
+    margin: 20px !important;
+  }
+
+  .project-card-view{
+    width: 250px !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .btn-primary{
+    margin: 10px !important;
+  }
 
   .contact-info h2 {
     font-size: 40px !important;
