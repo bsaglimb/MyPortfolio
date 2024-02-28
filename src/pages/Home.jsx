@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Particle from "../components/Particle";
 
 export default function Home() {
   const isFirstSection = true;
@@ -12,6 +13,7 @@ export default function Home() {
 
   return (
     <div className="home-wrapper">
+      {/* <Particle /> */}
       {isFirstSection && <ParticlesBg type="lines" bg={true} />}
       <div className="home-bg">
         <Container className="home-section" id="home">

@@ -12,6 +12,7 @@ export default function Projects() {
 
   return (
     <Container fluid className="project-section" id="projects">
+      <Particle />
       <h1 className="skillset-heading">
         <strong> My Recent Projects </strong>
       </h1>
