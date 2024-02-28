@@ -21,6 +21,8 @@ import { PiFileCss } from "react-icons/pi";
 
 export default function About() {
   const imgMe = "../images/me.JPG";
+  const imgMe2 = "../images/img3.png";
+  const img3 = "../images/img4.jpg";
 
   return (
    
@@ -71,7 +73,7 @@ export default function About() {
           </Col>
           <Col md={5} className="text-end">
             <img
-              src={imgMe}
+              src={img3}
               alt="personal pic"
               className="personal-pic"
               style={{ maxHeight: "450px" }}

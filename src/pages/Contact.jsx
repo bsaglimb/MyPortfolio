@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Particle from "../components/Particle";
 
 export default function Contact() {
   const [email, setEmail] = useState("");
@@ -48,6 +49,7 @@ export default function Contact() {
 
   return (
     <Container fluid className="contact" id="contact">
+   <Particle />
   <div className="flex-row">
     <br />
     <br />
