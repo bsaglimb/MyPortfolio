@@ -219,11 +219,12 @@
   }
 
   .personal-pic{
-    border-radius: 20%;
-    height: 100%;
-    width: 100%;
-    margin-top: 170px;
-    margin-left: 50px;;
+    display: inline;
+    border-radius: 20% !important;
+    height: auto !important;
+    width: auto !important;
+    margin-top: 100px !important;
+    margin-left: 50px !important;
   }
 
 
@@ -519,18 +520,14 @@
   }
   
   .personal-pic {
-
-    display: flex !important;
-    max-width: 400px !important;
-    max-height: 300px !important;
-    width: auto !important;
-    height: auto !important;
+    display: none !important;
   }
 
   .skillset-heading{
     margin-top: 10% !important;
     max-width: 400px !important;
     max-height: 300px !important;
+    margin-bottom: 50px !important;
 
   }
  
@@ -548,10 +545,6 @@
     text-align: center !important;
   }
 
-  .skillset-heading{
-   margin-left: 180px !important;
-   margin-bottom: 50px !important;
-  }
 
   .project-card{
     padding: 20px !important;

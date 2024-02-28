@@ -70,7 +70,7 @@ export default function About() {
               </ul>
             </blockquote>
           </Col>
-          <Col md={12} className="text-end">
+          <Col md={5} className="text-end">
             <img
               src={img3}
               alt="personal pic"
