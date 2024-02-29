@@ -3,6 +3,12 @@
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
 }
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
 
 #particles-bg {
     z-index: 1;

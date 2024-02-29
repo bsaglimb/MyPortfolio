@@ -43,7 +43,6 @@ export default function Home() {
                 <img 
                   src={imgMe2}
                   alt="home pic"
-                  className="img-fluid" 
                            
                   />
               </Col>
