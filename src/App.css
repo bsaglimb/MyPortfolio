@@ -127,19 +127,11 @@
     color: var(--secondary-color);
   }
 
-  
-  /* .home-about-section {
-    position: relative;
-    padding-bottom: 70px !important;
-    padding-top: 70px !important;
-    backdrop-filter: blur(5px);
+  .home-pic{
+    position: fixed;
+    top: 0;
+    left: 650px;
   }
-  
-  .home-about-body {
-    padding-top: 50px;
-    font-size: 1.2em !important;
-    text-align: left;
-  } */
   
   .home-about-social {
     text-align: center !important;
@@ -526,6 +518,11 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   body {
     text-align: center !important;
+  }
+
+
+  .home-pic{
+   display: none;
   }
 
   .social-icons-nav{

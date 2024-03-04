@@ -8,7 +8,6 @@ import Particle from "../components/Particle";
 
 export default function Home() {
   const isFirstSection = true;
-  const imgMe = "../images/img3.png";
   const imgMe2 = "../images/img6.png";
 
   return (
@@ -39,7 +38,7 @@ export default function Home() {
                   />
                 </h2>
               </Col>
-              <Col>
+              <Col className="home-pic">
                 <img 
                   src={imgMe2}
                   alt="home pic"
