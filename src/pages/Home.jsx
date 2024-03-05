@@ -4,11 +4,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import imgMe2 from "../../images/img6.png";
+import imgMe2 from "../assets/images/img6.png"
 
 export default function Home() {
   const isFirstSection = true;
-  // const imgMe2 = "../images/img6.png";
 
   return (
     <div className="home-wrapper">
