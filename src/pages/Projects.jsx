@@ -6,9 +6,10 @@ import Particle from "../components/Particle";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
+import imgPath1  from "../assets/images/breweryFinder.png";
+import imgPath2 from "../assets/images/roomeo.png";
+
 export default function Projects() {
-  const imgPath1 = "../images/breweryFinder.png";
-  const imgPath2 = "../images/roomeo.png";
 
   return (
     <Container fluid className="project-section" id="projects">
