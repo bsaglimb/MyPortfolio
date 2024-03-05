@@ -25,7 +25,7 @@ export default function Home() {
                   <strong className="main-name"> Brianna Saglimbeni</strong>
                 </h1>
                 <br />
-                <h2 md={7} style={{ paddingLeft: 42 }}>
+                <h2 md={7} style={{ paddingLeft: 42 }} className="typewriter">
                   <Typewriter
                     options={{
                       strings: ["Full Stack Software Developer"],
