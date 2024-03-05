@@ -1,19 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
-.app {
-  font-family: "Poppins", sans-serif;
-  line-height: 1.5;
-}
+
 #root{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
+  min-height: 100vh; 
 }
 
-#particles-bg {
-    z-index: 1;
-    position: absolute;
-  }
   
   body{
     background-image: linear-gradient(to top right, #bbc4bf, #a4c3b2, #a4c3b2, #6b9080, #727c78 );
@@ -92,6 +84,7 @@
 /* Home section */
 /* --------- */
 
+
 .home-bg {
   backdrop-filter: blur(2.4px);
 }
@@ -105,7 +98,6 @@
     padding: 9rem 0 2rem !important;
     color: whitesmoke;
     text-align: left;
-
  
   }
   
@@ -128,9 +120,10 @@
   }
 
   .home-pic{
-    position: fixed;
-    top: 0;
-    left: 650px;
+  display: flex;
+  position: absolute;
+  left: 600px;
+  bottom: 20px;
   }
   
   .home-about-social {
@@ -476,6 +469,7 @@
     bottom: 0 !important;
     padding-top: 10px !important;
     padding-bottom: 8px !important ;
+  
   }
 
 .footer-copywright {
@@ -504,7 +498,7 @@
 
 
 /* --------- */
-/* Footer */
+/* Media Query */
 /* --------- */
 
 /*Devices larger than 1024px*/
@@ -645,8 +639,8 @@
   }
 
   /* .home-pic {
-    width: 10px !important;
-    height: 10px !important;
+    display: block;
+
   } */
   
   .tech-icons {
