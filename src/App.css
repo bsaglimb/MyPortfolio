@@ -638,10 +638,12 @@
     
   }
 
-  /* .home-pic {
-    display: block;
+  .home-pic {
+    height: 200px;
+    margin-left: 50px;
+    position: static;
 
-  } */
+  }
   
   .tech-icons {
     margin: 10px !important;
