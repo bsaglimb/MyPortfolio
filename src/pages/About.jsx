@@ -17,12 +17,10 @@ import {
   SiInsomnia,
 } from "react-icons/si";
 import { PiFileCss } from "react-icons/pi";
-// import Header from "../components/Header";
+
+import aboutMe from "../assets/images/img4.jpg"
 
 export default function About() {
-  const imgMe = "../images/me.JPG";
-  const imgMe2 = "../images/img3.png";
-  const img3 = "../images/img4.jpg";
 
   return (
     <Container fluid className="about-section" id="about">
@@ -72,7 +70,7 @@ export default function About() {
           </Col>
           <Col md={5} className="text-end">
             <img
-              src={img3}
+              src={aboutMe}
               alt="personal pic"
               className="personal-pic"
               style={{ maxHeight: "450px" }}
@@ -133,4 +131,4 @@ export default function About() {
       </Container>
     </Container>
   );
-          }  
+}  
