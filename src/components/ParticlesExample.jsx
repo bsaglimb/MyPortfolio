@@ -24,7 +24,7 @@ export default function Contact() {
             <h4 className="text-center">Reach Out Today</h4>
             <form
               target="_blank"
-              action="https://formsubmit.co/2c996bf5d2b19ea8835a40050313b4d7"
+              action="https://formsubmit.co/bsaglimb@gmail.com"
               method="POST"
             >
               <input
