@@ -9,7 +9,7 @@ export default function Contact() {
        <Particle />
         <Col className=" my-4 backdrop-blur bg-white/50 rounded-xl">
           <div className="container">
-            <h4 className="text-center">Contact me</h4>
+            <h4 className="contact-title">Contact me</h4>
             <p className="text-center"> 
                 <strong>I'd love to hear your feedback!</strong>
                </p>
@@ -19,7 +19,7 @@ export default function Contact() {
               method="POST"
             >
               <div className="form-group">
-                <div className="form-row">
+                <div className="contact-form">
                   <div className="col my-2">
                     <input
                       type="text"
@@ -40,7 +40,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-              <div className="form-group">
+              <div className="contact-form">
                 <textarea
                   placeholder="Your Message"
                   className="form-control rounded-xl"
