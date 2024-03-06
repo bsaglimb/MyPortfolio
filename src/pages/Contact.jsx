@@ -15,7 +15,7 @@ export default function Contact() {
                </p>
             <form
               target="_blank"
-              action="https://formsubmit.co/fe9ea3ae6955853958fe6d8c06c8cf22"
+              action="https://formsubmit.co/bsaglimb@gmail.com"
               method="POST"
             >
               <div className="form-group">
