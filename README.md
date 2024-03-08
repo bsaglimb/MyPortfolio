@@ -37,3 +37,7 @@
 ## links
 * https://github.com/bsaglimb/MyPortfolio
 * https://briannasportfolio.netlify.app/
+
+## image
+
+<img src="./src/assets/images/homepage.png">
