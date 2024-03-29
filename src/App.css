@@ -277,19 +277,14 @@
   font-size: 2em !important;
 }
 
-.project-section {
-    position: relative !important;
-    padding-top: 10px !important;
-    padding-bottom: 90px !important;
-    color: var(--primary-color);
-}
-  
-  .project-card {
-    padding-top: 50px !important;
-    padding-bottom: 50px !important;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-    height: auto !important;
+
+
+  .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   .project-card-view {
@@ -297,8 +292,10 @@
     background-color: transparent !important;
     opacity: 0.9 !important;
     transition: all 0.5s ease 0s !important;
-    height: 100% !important;
     color: var(--primary-color);
+    width: 30%;
+    margin-bottom: 20px;
+    
   }
 
   .project-card-view:hover {
@@ -633,5 +630,15 @@
     align-items: center;
     margin: 10px;
   }
+
+  .project-card-view {
+    width: 85%;
+    margin-bottom: 50px;
+    
+  }
+  .skillset-heading1{
+ padding-top: 10%;
+}
+
   
 }

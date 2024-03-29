@@ -21,7 +21,7 @@ export default function Projects() {
         Here are a few projects I've worked on recently.
       </p>
 
-      <Col md={4} className="project-card">
+      <div className="projects-container">
         <Card className="project-card-view">
           <Card.Img
             variant="top"
@@ -57,9 +57,7 @@ export default function Projects() {
             </Button>{" "}
           </Card.Body>
         </Card>
-      </Col>
 
-      <Col md={4} className="project-card">
         <Card className="project-card-view">
           <Card.Img
             variant="top"
@@ -94,44 +92,40 @@ export default function Projects() {
             </Button>{" "}
           </Card.Body>
         </Card>
-      </Col>
 
-      <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
-          <Card className="project-card-view">
-            <Card.Img
-              variant="top"
-              src={project1}
-              alt="card-img"
-              className="project-card-img"
-            ></Card.Img>
-            <Card.Body>
-              <Card.Title style={{ textAlign: "center" }}>
-                Brewery Finder
-              </Card.Title>
-              <Card.Text>
-                Brewery Finder seamlessly combines the thrill of discovering new
-                breweries with the convenience of real-time weather updates,
-                ensuring every sip is savored in the perfect setting. Whether
-                you're a craft beer enthusiast or a casual explorer, Brewery
-                Finder guides you to nearby breweries, cideries, brewpubs, and
-                bottle shops and curates personalized recommendations based on
-                your taste preferences, and keeps you informed about the weather
-                at each location.{" "}
-              </Card.Text>
-              <Button
-                className="btn-primary"
-                href="https://github.com/bsaglimb/BreweryFinder"
-              >
-                <BsGithub /> &nbsp;GitHub
-              </Button>{" "}
-              <Button className="btn-primary" href="">
-                <CgWebsite /> &nbsp;Website
-              </Button>{" "}
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+        <Card className="project-card-view">
+          <Card.Img
+            variant="top"
+            src={project1}
+            alt="card-img"
+            className="project-card-img"
+          ></Card.Img>
+          <Card.Body>
+            <Card.Title style={{ textAlign: "center" }}>
+              Brewery Finder
+            </Card.Title>
+            <Card.Text>
+              Brewery Finder seamlessly combines the thrill of discovering new
+              breweries with the convenience of real-time weather updates,
+              ensuring every sip is savored in the perfect setting. Whether
+              you're a craft beer enthusiast or a casual explorer, Brewery
+              Finder guides you to nearby breweries, cideries, brewpubs, and
+              bottle shops and curates personalized recommendations based on
+              your taste preferences, and keeps you informed about the weather
+              at each location.{" "}
+            </Card.Text>
+            <Button
+              className="btn-primary"
+              href="https://github.com/bsaglimb/BreweryFinder"
+            >
+              <BsGithub /> &nbsp;GitHub
+            </Button>{" "}
+            <Button className="btn-primary" href="">
+              <CgWebsite /> &nbsp;Website
+            </Button>{" "}
+          </Card.Body>
+        </Card>
+      </div>
     </Container>
   );
 }
