@@ -220,6 +220,7 @@
     width: auto !important;
     margin-top: 40% !important;
     margin-left: 50px !important;
+    max-height: 450px;
   }
 
 
@@ -409,7 +410,7 @@
 /*Devices larger than 1024px*/
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   h4 {
     font-size: 42px;
   }
@@ -615,4 +616,18 @@
     .footer-body {
       text-align: center;
     }
+}
+
+
+@media (max-width: 450px) {
+  .personal-pic{
+    display: inline;
+
+    height: auto !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+
+  }
+
+  
 }

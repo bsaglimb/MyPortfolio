@@ -60,10 +60,10 @@ export default function About() {
                   <IoFlowerOutline /> Fostering Kittens
                 </li>
                 <li className="about-activity">
-                  <IoFlowerOutline /> Playing Video Games
+                  <IoFlowerOutline /> Playing Video Games 
                 </li>
                 <li className="about-activity">
-                  <IoFlowerOutline /> Travelling
+                  <IoFlowerOutline /> Reading 
                 </li>
               </ul>
             </blockquote>
@@ -73,7 +73,7 @@ export default function About() {
               src={aboutMe}
               alt="personal pic"
               className="personal-pic"
-              style={{ maxHeight: "450px" }}
+              
             />
           </Col>
         </Row>
