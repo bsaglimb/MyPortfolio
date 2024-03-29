@@ -622,12 +622,16 @@
 @media (max-width: 450px) {
   .personal-pic{
     display: inline;
-
     height: auto !important;
     width: 100% !important;
     margin-left: 0px !important;
 
   }
 
+  .btn-primary{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
   
 }

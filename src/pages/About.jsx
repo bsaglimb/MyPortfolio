@@ -37,8 +37,8 @@ export default function About() {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               <strong>Let me introduce myself.</strong>
             </h1>
-            <blockquote className="blockquote mb-0">
-              <p style={{ textAlign: "justify" }}>
+            <blockquote className="blockquote">
+              <p style={{ textAlign: "left" }}>
                 I am a former neuroscientist who has transitioned into the realm
                 of full-stack software development. My journey has been one of
                 seamless integration, blending my deep understanding of the human
