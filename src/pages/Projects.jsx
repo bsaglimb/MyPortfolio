@@ -9,8 +9,10 @@ import { BsGithub } from "react-icons/bs";
 import project1 from "../assets/images/breweryFinder.png";
 import project2 from "../assets/images/roomeo.png";
 import project3 from "../assets/images/astra.png";
+import project4 from "../assets/images/environmentalAngels.png"
+import project5 from "../assets/images/dowejet.svg"
 
-export default function Projects() {
+export default function Projects() { 
   return (
     <Container fluid className="project-section" id="projects">
       <Particle />
@@ -22,6 +24,60 @@ export default function Projects() {
       </p>
 
       <div className="projects-container">
+
+      <Card className="project-card-view">
+          <Card.Img
+            variant="top"
+            src={project5}
+            alt="card-img"
+            className="project-card-img"
+          ></Card.Img>
+          <Card.Body>
+            <Card.Title style={{ textAlign: "center" }}>
+              Dowejet
+            </Card.Title>
+            <Card.Text>
+            Introducing Dowejet, where luxury meets affordability in private flight deals. As part of the design team, I am working to creating a seamless user experience for accessing "empty leg" flights at unbeatable prices. Based in Paris and Fort Lauderdale, Florida, Dowejet makes luxury travel accessible to all.{" "}
+            </Card.Text>
+            <Button
+              className="btn-primary"
+              variant="primary"
+              href="https://github.com/bdange/dowejet"
+            >
+              <BsGithub /> &nbsp;GitHub{" "}
+            </Button>{" "}
+            <Button
+              className="btn-primary"
+              variant="secondary"
+              href="https://dowejet.vercel.app/"
+            >
+              <CgWebsite /> &nbsp;Website{" "}
+            </Button>{" "}
+          </Card.Body>
+        </Card>
+
+      <Card className="project-card-view">
+          <Card.Img
+            variant="top"
+            src={project4}
+            alt="card-img"
+            className="project-card-img"
+          ></Card.Img>
+          <Card.Body>
+            <Card.Title style={{ textAlign: "center" }}>Environmental Angels</Card.Title>
+            <Card.Text>
+            Explore Environmental Angels, a leading environmental consulting firm with over 45 years of combined experience. As a freelance developer, I had the privilege of updating their website and creating new pages to showcase their expanded services. From site assessments to waste management, Environmental Angels delivers top-notch solutions with a focus on integrity and client satisfaction.{" "}
+            </Card.Text>
+            <Button
+              className="btn-primary"
+              variant="secondary"
+              href="https://environmentalangels.net/"
+            >
+              <CgWebsite /> &nbsp;Website{" "}
+            </Button>{" "}
+          </Card.Body>
+        </Card>
+
         <Card className="project-card-view">
           <Card.Img
             variant="top"
